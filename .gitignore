@@ -1,0 +1,60 @@
+# Default deny: explicitly allow project source and documentation.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/PROJECT_CONTEXT.md
+!/src/
+!/configs/
+!/docs/
+/docs/*
+!/docs/synopsis/
+/docs/synopsis/*
+!/docs/synopsis/Submitted-Synopsis.pdf
+
+# Pre-existing and personal files: local only.
+/Minor Project Instraction 1.txt
+/Conversation between me and Sir Voice 029_sd Transcript.txt
+/Context TO Agent.md
+/MLOPS_30Sep.txt
+/Arani-IITD-Video-Workshop-Slides.pdf
+/Page1.pdf
+/Project_Explanation_Script.pdf
+
+# Secrets and local environment settings, even inside allowed folders.
+**/.env
+**/.env.*
+**/*credentials*
+**/*secret*
+**/*token*
+**/MLOPS_30Sep.txt
+**/*.pem
+**/*.key
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+
+# Large data, recordings, models and generated results.
+/data/
+/models/
+/outputs/
+/runs/
+**/frames/
+**/extracted_frames/
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.tflite
+**/*.h5
+**/*.ckpt
+**/*.mp4
+**/*.avi
+**/*.mkv
+**/*.mov
+**/*.m4a
+**/*.mp3
+**/*.wav
+**/*.yuv
+**/*.y4m
